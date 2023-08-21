@@ -1,9 +1,24 @@
+import { Player } from "./models/Player.js"
 import { Value } from "./models/Value.js"
 import { EventEmitter } from "./utils/EventEmitter.js"
 import { isValidProp } from "./utils/isValidProp.js"
 import { loadState } from "./utils/Store.js"
 
 class ObservableAppState extends EventEmitter {
+
+  players = [
+    new Player('Bob'),
+    new Player('Frank'),
+  ]
+
+
+
+
+
+
+
+
+
   page = ''
 
   /** @type {import('./models/Value.js').Value[]} */
