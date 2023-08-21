@@ -7,9 +7,9 @@ export class Player {
     this.score = 0;
   }
   get PlayerTemplateCard() {
-    return /*html*/`
-        <div class="card">
-            <div class="card-body">
+    return `
+        <div>
+            <div>
                 ${this.name} - ${this.score}
             </div>
         </div>`
